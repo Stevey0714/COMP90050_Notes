@@ -118,6 +118,7 @@
 * [No-SQL](#no-sql): Non relational - database modelled other than the tabular relations. Covers a wide range of database types.
 
 <h3 id="simple_file">Simple File</h3>
+
 * Usually very fast for simple applications but can be slow for complex applications
 * Can be less reliable
 * Application dependent optimization
@@ -127,6 +128,7 @@
 * Some very specialized cases like scientific data may use them
 
 <h3 id="RDBS">Relational Database Systems</h3>
+
 * Very reliable in terms of consistency of data
 * Application independent optimization, so relatively fast
 * Well suited for more applications, increasingly very fast due to large main memory machines and increasing used of SSDs
@@ -134,6 +136,7 @@
 * Can be slow for some special applications
 
 <h3 id="OOR">Object Oriented Database Systems</h3>
+
 * Stores as objects directly, not tables
 * May contain both data(attributes) and methods
 * Can be slow on some applications
@@ -143,6 +146,7 @@
 * Unfortunately, many commercial systems started did not survive the force of RDB technology and basically disappeared from the market
 
 <h3 id="no-sql">No-SQL</h3>
+
 * Flexible, not fixed schema
 * Provides a mechanism for storage and retrieval of data modelled in means other than the tabular relations, used with big data
 * Simple design, should linearly scale
