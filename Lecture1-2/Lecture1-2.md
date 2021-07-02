@@ -103,7 +103,65 @@
   > <img src="007.png" alt="" width="600" height="275">
   
 * Effective disk buffer access time: Caching provided with HDD for access:
-    > <img src="https://render.githubusercontent.com/render/math?math=Effectuve disk buffer access time = Hit Ratio of the Disk Buffer * Buffer access time + (1 - Hit Ratio of the Disk Buffer) * Disk Access Time" alt="">
+    > <img src="https://render.githubusercontent.com/render/math?math=Effectivedisk buffer access time = Hit Ratio of the Disk Buffer * Buffer access time + (1 - Hit Ratio of the Disk Buffer) * Disk Access Time" alt="">
   
 * E.g. 
   > <img src="008.png" alt="" width="600" height="305">
+  
+## Database Systems
+
+### Types of Database Systems
+
+* [Simple File](#simple_file): As a plain text file. Each line holds one record,  with fields separated by delimiters.
+* [Relational Database Systems](#RDBS): As a collection of tables(relations) consisting of rows and column. A primary key is used to uniquely identify each row.
+* [Object Oriented](#OOR): Data stored in the form of objects directly
+* [No-SQL](#no-sql): Non relational - database modelled other than the tabular relations. Covers a wide range of database types.
+
+<h3 id="simple_file">Simple File</h3>
+* Usually very fast for simple applications but can be slow for complex applications
+* Can be less reliable
+* Application dependent optimization
+* Very hard to maintain (concurrency problem)
+* Many of the required features need to be incorporated - unnecessary code development and potential increase in unreliability
+* Eventually were left behind for most business cases
+* Some very specialized cases like scientific data may use them
+
+<h3 id="RDBS">Relational Database Systems</h3>
+* Very reliable in terms of consistency of data
+* Application independent optimization, so relatively fast
+* Well suited for more applications, increasingly very fast due to large main memory machines and increasing used of SSDs
+* Some relational database also support Object Oriented model. E.g. Oracle, DB2, XML data + queries
+* Can be slow for some special applications
+
+<h3 id="OOR">Object Oriented Database Systems</h3>
+* Stores as objects directly, not tables
+* May contain both data(attributes) and methods
+* Can be slow on some applications
+* Reliable
+* Limited application independent optimization
+* Well suited for applications requiring complex data
+* Unfortunately, many commercial systems started did not survive the force of RDB technology and basically disappeared from the market
+
+<h3 id="no-sql">No-SQL</h3>
+* Flexible, not fixed schema
+* Provides a mechanism for storage and retrieval of data modelled in means other than the tabular relations, used with big data
+* Simple design, should linearly scale
+* No-SQL has compromise consistency and allows replications.
+* Most No-SQL databases offer "eventual consistency", which might result in reading data from an older version, a problem known as stale reads
+* Types of No-SQL databases:
+  * Key-Values: E.g. Riak, Tokyo Cabinet, Redis server, Memcached, Scalaris
+    * Stores data as a collection for key-value pairs, where each key is unique, each record many have different fields
+    * Why useful: Many applications do not require the expressive functionality of transaction processing and rigidity
+    * Used for building very fast, highly parallel processing of large data. E.g. MapReduce and Hadoop
+    * Atomic updates at Key-value pair level only
+  * Document-based: E.g. MongoDB, CouchDB, OrientDB, RavenDB
+  * Column-based: E.g. BigTable, Cassandra, Hbase, Hypertable
+  * Graph-based: Neo4J, InfoGrid, Infinite Graph, Flock DB
+  
+* Deductive database systems:
+  * Allows recursion, similar to logic programming like Prolog
+  * Works on rules and facts and make deductions
+  * Most of the application can be developed entirely using DDBS
+  * There are no commercially available
+  * Many applications do not require the expressive power of these systems
+  * Many RDBs do provide some of the functionalities
