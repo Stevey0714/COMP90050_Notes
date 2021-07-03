@@ -103,7 +103,7 @@
   > <img src="007.png" alt="" width="600" height="275">
   
 * Effective disk buffer access time: Caching provided with HDD for access:
-    > <img src="https://render.githubusercontent.com/render/math?math=Effectivedisk buffer access time = Hit Ratio of the Disk Buffer * Buffer access time + (1 - Hit Ratio of the Disk Buffer) * Disk Access Time" alt="">
+    > <img src="https://render.githubusercontent.com/render/math?math=Effective \mspace{3mu} disk buffer access time = Hit Ratio of the Disk Buffer * Buffer access time + (1 - Hit Ratio of the Disk Buffer) * Disk Access Time" alt="">
   
 * E.g. 
   > <img src="008.png" alt="" width="600" height="305">
