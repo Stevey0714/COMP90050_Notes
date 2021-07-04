@@ -44,6 +44,8 @@
     
 * Advantages of B+ Trees outweigh disadvantages, therefore B+ trees are sued extensively
 
+* Extra reference: [面试官问你B树和B+树，就把这篇文章丢给他](https://segmentfault.com/a/1190000020416577)
+
 ### B+ Tree Architecture
 
 * It is similar to a binary tree in concept but with a fan out that is defined through a number n
