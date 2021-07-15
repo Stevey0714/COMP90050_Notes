@@ -26,16 +26,16 @@
 <td>Exclusive</td>
 </tr>
 <tr>
-<td>Shared Request (SLOCK)<br>Used to block others writing or modifying</td>
-<td>Compatible<br>Request granted immediately <br> Changes Mode from Free to Shared</td>
-<td>Compatible<br>Request granted immediately <br> Mode stays Shared</td>
-<td>Conflict<br>Request delayed until the state becomes compatible <br> Mode stays Exclusive</td>
+<td><b>Shared Request (SLOCK)</b><br>Used to block others writing or modifying</td>
+<td><b>Compatible</b><br>Request granted immediately <br> Changes Mode from Free to Shared</td>
+<td><b>Compatible</b><br>Request granted immediately <br> Mode stays Shared</td>
+<td><b>Conflict</b><br>Request delayed until the state becomes compatible <br> Mode stays Exclusive</td>
 </tr>
 <tr>
-<td>Exclusive request (XLOCK) <br>Used to block others reading, writing or modifying</td>
-<td>Compatible<br>Request granted immediately<br>Changes Mode form Free to Exclusive</td>
-<td>Conflict<br>Request delayed until the state becomes compatible<br>Mode stays Shared</td>
-<td>Conflict<br>Request delayed until the state becomes compatible<br>Mode stays Exclusive</td>
+<td><b>Exclusive request (XLOCK) </b><br>Used to block others reading, writing or modifying</td>
+<td><b>Compatible</b><br>Request granted immediately<br>Changes Mode form Free to Exclusive</td>
+<td><b>Conflict</b><br>Request delayed until the state becomes compatible<br>Mode stays Shared</td>
+<td><b>Conflict</b><br>Request delayed until the state becomes compatible<br>Mode stays Exclusive</td>
 </tr>
 </table>
 
